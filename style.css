@@ -1,0 +1,134 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #1c1c1e; /* Fundo escuro */
+    color: #e0e0e0; /* Texto claro */
+}
+
+header {
+    background: #23232e; /* Fundo do cabeçalho em tom escuro */
+    padding: 10px 0;
+    text-align: center;
+}
+
+.top-contact {
+    font-size: 0.9em; /* Tamanho menor para o contato no topo */
+    color: #bbbbbb; /* Cor mais clara */
+    margin-bottom: 10px;
+}
+
+.logo {
+    width: 200px;
+}
+
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background: #333344; /* Fundo mais escuro */
+    background: linear-gradient(135deg, #333344 0%, #23232e 100%); /* Gradiente escuro */
+    color: #f1f1f1; /* Texto claro */
+}
+
+h1, h2, h3 {
+    margin: 10px 0;
+    color: #ffffff; /* Títulos em branco */
+}
+
+.feature {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #292a33; /* Fundo escuro das seções */
+    margin: 40px;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra mais intensa */
+    transition: transform 0.3s ease;
+    gap: 20px; /* Espaçamento entre texto e imagem */
+}
+
+.feature:hover {
+    transform: translateY(-10px); /* Efeito de flutuação */
+}
+
+.feature:nth-child(even) {
+    flex-direction: row-reverse; /* Inverte a direção para seções pares */
+}
+
+.feature-image {
+    width: 400px; /* Largura fixa */
+    height: 400px; /* Altura fixa */
+    object-fit: cover; /* Ajusta a imagem sem distorção */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra nas imagens */
+}
+
+.feature-text h3 {
+    margin-bottom: 10px; /* Espaço abaixo do título */
+    font-size: 1.5em; /* Tamanho do título */
+    color: #ffffff; /* Cor do título */
+}
+
+.feature-text {
+    flex: 1; /* Permite que o texto ocupe espaço flexível */
+}
+
+.why-choose, .testimonials, .contact {
+    margin: 20px;
+    padding: 20px;
+    background: #292a33; /* Fundo escuro nas seções */
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra mais intensa */
+}
+
+.why-choose h2, .testimonials h2, .contact h2 {
+    color: #ffffff; /* Títulos em branco */
+}
+
+.testimonials blockquote {
+    border-left: 4px solid #ff9800; /* Laranja escuro para destaque */
+    padding-left: 20px;
+    margin: 10px 0;
+    color: #e0e0e0;
+}
+
+button {
+    background: #ff9800; /* Laranja escuro para os botões */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #ff7700; /* Laranja mais vibrante no hover */
+}
+
+input[type="email"], input[type="text"] {
+    padding: 10px;
+    width: calc(100% - 22px);
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.social-icons img {
+    width: 30px;
+    margin: 0 10px;
+}
+
+footer {
+    background: #23232e; /* Fundo escuro do rodapé */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-contact {
+    margin-bottom: 10px;
+    font-size: 1em; /* Tamanho normal para o contato no rodapé */
+}
